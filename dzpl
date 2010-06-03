@@ -1,0 +1,18 @@
+#!/usr/bin/env perl
+use Dzpl
+    name => 'Path-Class-Temp',
+    version => '0.0010',
+    author => 'Robert Krimen <robertkrimen@gmail.com>',
+    license => 'Perl5',
+    copyright => 'Robert Krimen',
+
+    require => q/
+        Path::Class
+        Package::Pkg 0.0015
+
+        [Test]
+        Test::Most
+    /,
+;
+
+{ plugin '@ROKR' }
